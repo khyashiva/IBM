@@ -1,0 +1,37 @@
+PLOTS
+
+BOX PLOTS
+Because outliers are one of the primary reasons for resulting in a less accurate model.
+The outlier detection and removing that I am going to perform is called IQR score technique.
+Often outliers can be seen with visualizations using a box plot.
+
+HISTORAM
+frequency of occurrence of variables in an interval
+
+HEAT MAPS
+when we need to find the dependent variables.
+
+SCATTERPLOT
+to find the correlation between two variables
+
+
+PLOTTING WITH R STUDIO
+
+ggplot ggplot2 GGally.GGally
+
+library(datasets)
+data(iris)
+View(iris)
+unique(iris$Species)
+
+library(GGally)
+ggpairs(iris, mapping=ggplot2::aes(colour = Species))
+
+
+
+packages to run on console
+install.packages("GGally", repos = "https://cran.r-project.org", type= "source")
+
+
+
+
